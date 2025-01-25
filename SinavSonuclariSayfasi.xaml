@@ -1,0 +1,31 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VeritabaniOdevi.SinavSonuclariSayfasi"
+             Title="Sınav Sonuçları">
+    <StackLayout Padding="20">
+        <Label Text="Sınav Sonuçlarınız" 
+               FontSize="24" 
+               HorizontalOptions="Center" />
+
+        <CollectionView x:Name="SinavSonuclariCollectionView"
+                        SelectionMode="Single"
+                        SelectionChanged="OnSinavSelected">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="Gray" 
+                           CornerRadius="10" 
+                           Padding="10" 
+                           Margin="5">
+                        <StackLayout>
+                            <Label Text="{Binding SinavTarihi, StringFormat='{0:dd/MM/yyyy}'}" 
+                                   FontSize="16" 
+                                   FontAttributes="Bold" />
+                            <Label Text="Sınav Bilgisi" 
+                                   FontSize="14" />
+                        </StackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</ContentPage>

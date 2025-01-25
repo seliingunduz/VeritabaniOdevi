@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VeritabaniOdevi.SifreDegistirmeSayfasi"
+             Title="Şifre Değiştirme">
+    <StackLayout Padding="10">
+        <Entry x:Name="YeniSifreEntry" Placeholder="Yeni Şifre" IsPassword="True" />
+        <Entry x:Name="YeniSifreTekrarEntry" Placeholder="Yeni Şifre Tekrar" IsPassword="True" />
+        <Button Text="Şifreyi Değiştir" Clicked="OnSifreDegistirClicked" />
+    </StackLayout>
+</ContentPage>

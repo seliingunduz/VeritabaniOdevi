@@ -1,0 +1,14 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VeritabaniOdevi.GirisSayfasi"
+             Title="Giriş Yap">
+    <StackLayout Padding="20">
+        <Label Text="Öğrenci Numarası" />
+        <Entry x:Name="OgrenciNumarasiEntry" Placeholder="Öğrenci numaranızı girin" />
+
+        <Label Text="Şifre" />
+        <Entry x:Name="SifreEntry" Placeholder="Şifrenizi girin" IsPassword="True" />
+
+        <Button Text="Giriş Yap" Clicked="OnGirisYapClicked" />
+    </StackLayout>
+</ContentPage>
